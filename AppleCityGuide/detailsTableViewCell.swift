@@ -8,27 +8,24 @@
 
 import UIKit
 import KFSwiftImageLoader
+import Cosmos
 
-
-class detailsTableViewCell: UITableViewCell {
+class detailsTableViewCell: UITableViewCell  {
 
     
     @IBOutlet weak var thumImage: UIImageView!
     
+    var tour: [String: AnyObject]!
+    
+    
     @IBOutlet weak var tourName: UILabel!
-    
     @IBOutlet weak var daysDuration: UILabel!
-    
     @IBOutlet weak var tourLength: UILabel!
-    
     @IBOutlet weak var tourComplexity: UILabel!
-    
     @IBOutlet weak var tourType: UILabel!
-    
+    @IBOutlet weak var ratingStar: CosmosView!
     
 
-  
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
