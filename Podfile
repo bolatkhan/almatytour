@@ -9,4 +9,10 @@ target 'AppleCityGuide' do
   	pod 'KFSwiftImageLoader', '~> 2.0'
 	pod 'Cosmos', '~> 1.2'
 	pod 'Ruler', '~> 0.7.1'
+
+	pod 'FBSDKCoreKit'
+	pod 'FBSDKShareKit'
+	pod 'FBSDKLoginKit'
+	
+	
 end

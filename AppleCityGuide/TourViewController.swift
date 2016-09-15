@@ -11,14 +11,8 @@ import KFSwiftImageLoader
 
 final class TourViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
-    
-  
-    
     private var tours = [[String: AnyObject]]()
-    
     private var stringURL = "https://data.egov.kz/api/v2/almoblturoperator/v1?"
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         stringURL += "source={\"size\":100}&pretty".stringByAddingPercentEncodingWithAllowedCharacters(.URLPathAllowedCharacterSet())!

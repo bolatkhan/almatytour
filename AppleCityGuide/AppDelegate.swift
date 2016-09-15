@@ -7,32 +7,19 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        // Create content and menu controllers
-        //
-//        DEMONavigationController *navigationController = [[DEMONavigationController alloc] initWithRootViewController:[[DEMOHomeViewController alloc] init]];
-//        DEMOLeftMenuViewController *leftMenuViewController = [[DEMOLeftMenuViewController alloc] init];
-//        DEMORightMenuViewController *rightMenuViewController = [[DEMORightMenuViewController alloc] init];
-//        
-//        // Create side menu controller
-//        //
-//        RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
-//        leftMenuViewController:leftMenuViewController
-//        rightMenuViewController:rightMenuViewController];
-//        sideMenuViewController.backgroundImage = [UIImage imageNamed:@"Stars"];
-//        
-//        // Make it a root controller
-//        //
-//        self.window.rootViewController = sideMenuViewController;
-        
+//        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        return true
+    }
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+//        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
         return true
     }
 }
